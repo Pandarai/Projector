@@ -1,0 +1,72 @@
+body{
+    background: #FBFBFB;
+    background: transparent url("img/paper.png") repeat scroll 0% 0%;
+}
+
+.info {
+    background: rgb(200,230,240);
+    margin-right: 1%;
+    padding:2%;
+    border-radius: 3px;
+}
+
+.side {
+    background: rgb(200,230,240);
+    padding:1%;
+    border-radius: 3px;
+}
+
+.post {
+    padding:5%;
+    padding-bottom: 0%;
+    background: #FEFEFE;
+    border-radius: 2px;
+    padding-top: 1%;
+}
+
+.side-content {
+    background: #FCFCFC;
+    padding: 2%;
+    border-radius: 2px;
+    margin-bottom:4%;
+    padding-bottom: 6%;
+    padding-left:10%;
+    padding-right: 10%;
+}
+
+.post-footer {
+    text-align: right;
+    color: darkgray;
+    bottom: 0;
+    margin-top:1%;
+    padding:2%;
+}
+
+.mile {
+    padding:2%;
+    padding-top:4%;
+    padding-left:4%;
+    padding-right:4%;
+    border-radius:4px;
+    border:1px solid #DDDDDD;
+    margin-top:4%;
+    background:#FFFFFF;
+}
+
+.open {
+    background:;
+}
+
+.closed {
+    background: #DDDDDD;
+}
+
+#github h4{
+    font-size: 15pt;
+    color:#777777;
+}
+
+#milestones h5{
+    font-size: 13pt;
+    color:#777777;
+}
