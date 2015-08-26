@@ -26,7 +26,7 @@ body{
 
 .side-content {
     background: #FCFCFC;
-    padding: 2%;
+    padding: 6%;
     border-radius: 2px;
     margin-bottom:4%;
     padding-bottom: 6%;
@@ -51,6 +51,14 @@ body{
     border:1px solid #DDDDDD;
     margin-top:4%;
     background:#FFFFFF;
+    margin-left:0;
+    margin-bottom: 4%;
+}
+
+#octocatIcon {
+    width:24px;
+    height: 24px;
+    float: right;
 }
 
 .open {
@@ -64,6 +72,7 @@ body{
 #github h4{
     font-size: 15pt;
     color:#777777;
+    margin-top: 10%;
 }
 
 #milestones h5{

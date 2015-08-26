@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="res/bootstrap/css/bootstrap-theme.css">
         <link rel="stylesheet" href="res/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
         <title><?php echo $config['title']; ?></title>
     </head>
     <body>
@@ -42,10 +44,13 @@
                     </section>
                     <section class="side-content" id="milestones">
                     </section>
+                    <section class="side-content">
+                        <a href="https://github.com"><img src="res/img/icons/githubtext.png" width="24%"></a>
+                    </section>
                 </section>
             </div>
         </section>
-
+        <script src="api/drag.js"></script>
         <script src="api/github.js"></script>
     </body>
 </html>
