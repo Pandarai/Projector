@@ -1,5 +1,9 @@
 <?php
     include 'iniParser.php';
+    $now = new DateTime();
+    $start = new DateTime($config['start']);
+    $sprint = $now->diff($start);
+    $sprintCycle = ceil($sprint->days / $config['sprintLength']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,35 +26,63 @@
         </nav>
 
         <section class="container">
-            <div class="row">
-                <section class="info col-md-8">
-                    <section class="post">
-                        <div class="page-header">
-                            <h1>Hello World <small>Project Manager first post</small></h1>
-                        </div>
-                        <p>
-                            <?php
-                                echo $config['post'];
-                            ?>
-                        </p>
-                        <section class="post-footer">
-                            <i class="glyphicon glyphicon-user"></i><?php echo " " . $config['author']; ?>
+            <section class="row">
+                <section class="col-md-8">
+                    <section class="info">
+                        <section class="post">
+                            <div class="page-header">
+                                <h1>Hello World <small>Project Manager first post</small></h1>
+                            </div>
+                            <p>
+                                <?php
+                                    echo $config['post'];
+                                ?>
+                            </p>
+                            <section class="post-footer">
+                                <i class="glyphicon glyphicon-user"></i><?php echo " " . $config['author']; ?>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="info">
+                        <section class="post">
+                            <div class="page-header">
+                                <h1>Hello World <small>Project Manager first post</small></h1>
+                            </div>
+                            <p>
+                                <?php
+                                    echo $config['post'];
+                                ?>
+                            </p>
+                            <section class="post-footer">
+                                <i class="glyphicon glyphicon-user"></i><?php echo " " . $config['author']; ?>
+                            </section>
                         </section>
                     </section>
                 </section>
-                <section class="col-md-3 side">
-                    <section id="github" class="side-content github" name="<?php echo $config['githubUser']; ?>">
-                        <p id="Repo" name="<?php echo $config['githubRepo']; ?>">Github</p>
+                <section class="col-md-3">
+                    <section class="side">
+                        <section id="github" class="side-content github" name="<?php echo $config['githubUser']; ?>">
+                            <p id="Repo" name="<?php echo $config['githubRepo']; ?>">Github</p>
+                        </section>
+                        <section class="side-content" id="milestones">
+                        </section>
+                        <section class="side-content">
+                            <a href="https://github.com"><img src="res/img/icons/githubtext.png" width="24%"></a>
+                        </section>
                     </section>
-                    <section class="side-content" id="milestones">
-                    </section>
-                    <section class="side-content">
-                        <a href="https://github.com"><img src="res/img/icons/githubtext.png" width="24%"></a>
+                    <section class="side">
+                        <section class="side-content">
+                            <h5>Current Sprint: <?php echo $sprintCycle; ?></h5>
+                        </section>
+                        <section class="side-content">
+                            <canvas id="graph" width="190" height="190">
+                        </section>
                     </section>
                 </section>
-            </div>
+            </section>
         </section>
         <script src="api/drag.js"></script>
+        <script src="api/graph.js"></script>
         <script src="api/github.js"></script>
     </body>
 </html>

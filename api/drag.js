@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $("#milestones").on('DOMNodeInserted', '.mile', function(e){
-        $(this).draggable({helper: 'clone', cursorAt: {left: 50}});
+        $(this).draggable({helper: 'clone', cursorAt: {left: 50}, containment: '.row'});
     });
 
 });
