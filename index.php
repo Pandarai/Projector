@@ -29,6 +29,20 @@
             <section class="row">
                 <section class="col-md-8">
                     <section class="info">
+                        <section class="post" id="newPost">
+                            <div class="page-header">
+                                <h1><input class="inputTitle" placeholder="Title"> </input><small><input class="inputSubtitle" placeholder="Subtitle"></input></small></h1>
+                            </div>
+                            <input class="inputBody" type="textarea" rows="50" cols="50"></input>
+                            <section id="drop-area" class="drop-area">
+                                drop things here
+                            </section>
+                            <section class="post-footer">
+                                <i class="glyphicon glyphicon-user"></i><?php echo " " . $config['author']; ?>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="info">
                         <section class="post">
                             <div class="page-header">
                                 <h1>Hello World <small>Project Manager first post</small></h1>

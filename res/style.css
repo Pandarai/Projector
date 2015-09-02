@@ -59,6 +59,7 @@ body{
     background:#FFFFFF;
     margin-left:0;
     margin-bottom: 4%;
+    color: #777777;
 }
 
 .side-content h5 {
@@ -90,4 +91,55 @@ body{
 #milestones h5{
     font-size: 13pt;
     color:#777777;
+}
+
+.inputTitle {
+    border:none;
+    border-radius: 4px;
+    padding:1%;
+    color: #444444;
+    font-size: 27pt;
+    box-shadow: 0px 0px 5px rgb(120,100,180);
+}
+
+.drop-hover{
+    background: rgb(210, 210, 240);
+    color: #000000;
+    margin-top:2%;
+    min-height:100px;
+    border:3px dotted #BBBBBB;
+    border-radius: 4px;
+    padding:1.7%;
+    text-align: center;
+    line-height: 100px;
+}
+
+.drop-area {
+    margin-top:2%;
+    min-height:100px;
+    border:1px solid #BBBBBB;
+    border-radius: 4px;
+    color: #A1A1A1;
+    padding:2%;
+    text-align: center;
+    line-height: 100px;
+}
+
+.inputSubtitle {
+    border:none;
+    border-radius: 4px;
+    font-size: 17pt;
+    padding:5px;
+    color: #444444;
+    box-shadow: 0px 0px 5px rgb(120,100,180);
+}
+
+.inputBody{
+    width:100%;
+    border:none;
+    border-radius: 4px;
+    font-size: 11pt;
+    padding:5px;
+    color: #444444;
+    box-shadow: 0px 0px 5px rgb(120,100,180);
 }
