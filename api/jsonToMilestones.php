@@ -3,7 +3,7 @@
 $gitArr = $_POST['milestonesJson'];
 //echo "<h5>Milestones</h5>";
 foreach ($gitArr as $key => $value) {
-    echo "<section class='mile ".$gitArr[$key]['state']."'><p>" . $gitArr[$key]['title']."</p>";
+    echo "<a href='".$gitArr[$key]['html_url']."'><section class='mile ".$gitArr[$key]['state']."'><p>" . $gitArr[$key]['title']."</p>";
     $allIssues = $gitArr[$key]['closed_issues'] + $gitArr[$key]['open_issues'];
     $issuesClosed = $gitArr[$key]['closed_issues'];
     if($allIssues!=0){

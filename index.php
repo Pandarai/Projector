@@ -88,8 +88,12 @@
                         <section class="side-content">
                             <h5>Current Sprint: <?php echo $sprintCycle; ?></h5>
                         </section>
+                        <section class="side-content" id="sprint_graph">
+                            <canvas id="graph" width="190" height="190"></canvas>
+                        </section>
                         <section class="side-content">
-                            <canvas id="graph" width="190" height="190">
+                            <section class="label label-default closedissues">Closed Issues</section>
+                            <section class="label label-default openissues">Open Issues</section>
                         </section>
                     </section>
                 </section>
