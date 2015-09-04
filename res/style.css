@@ -114,6 +114,10 @@ body{
     float: right;
 }
 
+.labels {
+    padding-bottom: 12%;
+}
+
 .drop-hover{
     background: rgb(210, 210, 240);
     color: #000000;

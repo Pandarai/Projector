@@ -1,14 +1,12 @@
 $(document).ready(function(){
+
     $("#milestones").on('DOMNodeInserted', '.mile, a', function(e){
         $(this).draggable({helper: 'clone', cursorAt: {left: 50}, containment: '.row'});
     });
 
-    $("#sprint_graph").on('DOMNodeInserted', '#graph', function(e){
-        $(this).draggable({helper: 'clone', cursorAt: {left: 50}, containment: '.row'});
-    });
 
     $("#drop-area").droppable({
-        accept: ".mile, a, #graph",
+        accept: "#graph, .mile, a",
         helper: "clone",
         activate: function() {
             $("#drop-area").removeClass("drop-area").addClass("drop-hover");
@@ -27,5 +25,10 @@ $(document).ready(function(){
         console.log(ui);
         $("#drop-area").html($(ui['draggable']).clone());
     });
+
+});
+
+$(function(){
+    $('#graph').draggable({cursorAt: {left: 50}, containment: '.row', helper: 'clone'});
 
 });
